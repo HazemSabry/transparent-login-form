@@ -77,5 +77,10 @@ body {
   font-weight: lighter;
 }
 
+.login-email input:focus,
+.login-password input:focus {
+  box-shadow: 0 0 0 1px hsl(var(--primary-color-hsl));
+}
+
 .login-form #login-submit {
 }
