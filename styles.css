@@ -40,6 +40,10 @@ body {
 }
 
 .login-title {
+  color: white;
+  font-size: 2rem;
+  font-weight: normal;
+  text-align: center;
 }
 
 .login-form {
