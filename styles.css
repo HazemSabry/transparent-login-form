@@ -83,4 +83,18 @@ body {
 }
 
 .login-form #login-submit {
+  padding: 0.5em 1em;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  color: white;
+  background-color: hsl(var(--primary-color-hsl), 0.25);
+  border: 1px solid hsl(var(--primary-color-hsl));
+  border-radius: 0.25em;
+  outline: none;
+  cursor: pointer;
+}
+
+.login-form #login-submit:hover,
+.login-form #login-submit:focus {
+  background-color: hsl(var(--primary-color-hsl), 0.4);
 }
