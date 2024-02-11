@@ -1,8 +1,8 @@
 :root {
   --background-image: url(./images/painting-mountain-lake-with-mountain-background_188544-9126.avif);
 
-  --primary-color-hsl: 200, 100%, 91%;
-  --primary-light-color-hsl: 200, 100%, 50%;
+  --primary-color-hsl: 200, 100%, 50%;
+  --primary-light-color-hsl: 200, 100%, 91%;
   --primary-dark-color-hsl: 200, 100%, 6%;
 }
 
@@ -29,9 +29,10 @@ body {
 
 .login-container {
   --color: hsl(var(--primary-dark-color-hsl), 0.7);
-  background-color: hsl(var(--primary-dark-color-hsl), 0.4);
+  background-color: var(--color);
   box-shadow: 0 0 15px 0 var(--color);
   padding: 40px 30px;
+  width: 80%;
   max-width: 600px;
   border-radius: 20px;
 }
@@ -51,10 +52,29 @@ body {
   margin-top: 40px;
 }
 
-.login-email {
+.login-email,
+.login-password {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
 }
 
-.login-password {
+.login-email label,
+.login-password label {
+  color: white;
+  font-weight: lighter;
+}
+
+.login-email input,
+.login-password input {
+  font-size: 1.25rem;
+  padding: 0.5em;
+  background-color: hsl(var(--primary-light-color-hsl), 0.3);
+  border: none;
+  outline: none;
+  border-radius: 0.25em;
+  color: white;
+  font-weight: lighter;
 }
 
 .login-form #login-submit {
